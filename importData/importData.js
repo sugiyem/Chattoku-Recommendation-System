@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
-const file = "mal_top3000.csv";
+const file = "../dataset/mal_top3000.csv";
 const fs = require("fs");
 const baseURL = "https://api.jikan.moe/v4/top/anime";
 
