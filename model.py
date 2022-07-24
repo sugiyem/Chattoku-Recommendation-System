@@ -69,7 +69,7 @@ genre_lists = np.append(unique_genres, np.append(
 # print(len(genre_lists))
 # print(genre_lists)
 
-knn_model = NearestNeighbors(n_neighbors=5)
+knn_model = NearestNeighbors(n_neighbors=10)
 knn_model.fit(processed_anime_data.values)
 
 file = open("model.pkl", "wb")
