@@ -1,0 +1,14 @@
+name: Cron Job
+
+# Controls when the workflow will run
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Call recommendation server
+        run: wget https://chattoku-recommendation-system.herokuapp.com/ --delete-after
